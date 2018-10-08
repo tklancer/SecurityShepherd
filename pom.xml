@@ -163,18 +163,21 @@
                                         </copy>
                                         <exec executable="sed">
                                             <arg value="-i" />
+                                            <arg value="" />
                                             <arg value="s/-- DELIMITER \$\$/DELIMITER \$\$/g" />
                                             <arg value="${basedir}/docker/mysql/coreSchema.sql" />
                                             <arg value="${basedir}/docker/mysql/moduleSchemas.sql" />
                                         </exec>
                                         <exec executable="sed">
                                             <arg value="-i" />
+                                            <arg value="" />
                                             <arg value="s/-- \$\$/\$\$/g" />
                                             <arg value="${basedir}/docker/mysql/coreSchema.sql" />
                                             <arg value="${basedir}/docker/mysql/moduleSchemas.sql" />
                                         </exec>
                                         <exec executable="sed">
                                             <arg value="-i" />
+                                            <arg value="" />
                                             <arg value="s/-- DELIMITER \;/DELIMITER \;/g" />
                                             <arg value="${basedir}/docker/mysql/coreSchema.sql" />
                                             <arg value="${basedir}/docker/mysql/moduleSchemas.sql" />
